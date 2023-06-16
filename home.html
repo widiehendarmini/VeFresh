@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>fruit and vegetable</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-wrapper">
+                <a href="index.html" class="logo">Ve<span>Fresh</span></a>
+                <div class="menu-wrapper">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="home.html" class="menu-link active">Home</a></li>
+                        <li class="menu-item"><a href="search.html" class="menu-link">Search</a></li>
+                        <li class="menu-item"><a href="add2.php" class="menu-link">login</a></li>
+                    </ul>
+                    <a href="about.html" class="btn-member">about</a>
+                </div>
+                <div class="menu-toggle bx bxs-grid-alt">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script src="assest/js/main.js"></script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /* CSS for header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family: 'Sriracha', cursive;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+      background-image: url("");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      text-shadow: #996767;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #996767;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #BB8D8D;
+      border-radius: 100%;
+      border: 2px solid #BB8D8D;
+      padding: 12px;
+      
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #000000;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer */
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eed9a7;
+      padding: 40px 80px;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+    @media screen and (max-width: 991px) {
+    .navbar .nav-wrapper{
+        padding: 0 30px;
+    }
+    .nav-wrapper .menu-wrapper .menu{
+        gap: 50px;
+
+    }
+    .menu-wrapper .menu .menu-link{
+        font-size: 1rem;
+    }
+    .menu-wrapper .btn-member{
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-wrapper .menu-wrapper{
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 80%;
+        display: block;
+        text-align: center;
+        padding-bottom: 3rem;
+        border-radius: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s ease-in-out;
+        background-color: var(--main-color);
+    }
+    .nav-wrapper .menu-wrapper.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .5s ease-in-out;
+    }
+    .menu-toggle.bx-x{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+    .nav-wrapper .menu-wrapper .menu{
+        display: block;
+    }
+    .menu-wrapper .menu .menu-item{
+        margin: 40px 0;
+    }
+    .menu .menu-item .menu-link{
+        color: #fff;
+    }
+    .nav-wrapper .menu-toggle{
+        display: initial;
+        font-size: 2.5rem;
+        color: var(--main-color);
+    }
+}
+@media screen and (max-width: 991px) {
+    .navbar .nav-wrapper{
+        padding: 0 30px;
+    }
+    .nav-wrapper .menu-wrapper .menu{
+        gap: 50px;
+
+    }
+    .menu-wrapper .menu .menu-link{
+        font-size: 1rem;
+    }
+    .menu-wrapper .btn-member{
+        padding: 10px 25px;
+    }
+}
+
+  </style>
+  <main>
+    <div class="intro">
+      <h1><center>Take Care Of fruits and vegetables with <span>VeFresh</span></center></h1>
+      <p><center>take good care of it so that it produces fruits and vegetables and is beautiful and fresh</center></p>
+      <button class="learn-more"><a href="search.html" >ayo cari!!</a>
+      </button>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">1</p>
+        <p class="work-text">dengan adanya buah pasti diawali dengan biji-bijian,  jika anda ingin menanam buah tersebut ada halnya jg untuk mengetahui cara menanam biji buah & sayur agar tumbuh cantik dan subur.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">2</p>
+        <p class="work-text">tidak membuang biji dari buah-buahan tersebut melainkan mengolahnya dengan cara dicuci dan dikeringkan (dijemur dibawah sinar matahari) lalu setelah kering ditempatkan pada lahan atau tanah kosong guna tumbuh dengan mudah pada saat musim penghujan.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">3</p>
+        <p class="work-text">dalam tumbuhan yang sedang ditaman tidak jauh dari kata untuk disiram dan dipupuk, hal tersebut agar tumbuhan kita menjadi tetap fresh dan subur.</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>- Liberty Hyde Bailey</h2>
+        <p>"Sebuah taman membutuhkan tenaga dan perhatian yang sabar. Tanaman tidak tumbuh hanya untuk memenuhi ambisi atau untuk memenuhi niat baik. Mereka berkembang karena seseorang mengerahkan upaya untuk mereka."</p>
+      </div>
+      <img src="Rectangle 8.png" alt="me">
+    </div>
+  </main>
+  <footer class="footer">
+    @2023 design by vefresh
+    
+  </footer>
+</body>
+
+</html>
